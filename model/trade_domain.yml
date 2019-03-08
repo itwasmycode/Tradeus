@@ -1,0 +1,41 @@
+slots:
+  location:
+    type: text
+  e_commerce:
+    type: text
+  currency:
+    type: text
+  currency_to:
+    type: text
+  conversion_unit:
+    type: float
+  product:
+    type: text
+    
+intents:
+  - inform_product
+  - inform_currency
+  - greeting
+    
+entities:
+  - location
+  - e_commerce
+  - currency
+  - currency_to
+  - conversion_unit
+  - product
+
+templates:
+ utter_greet:
+   - text: 'Hello! How can I help?'
+ utter_ask_location:
+   - text: 'From where to where?'
+ utter_goodbye:
+   - text: 'Goodbye!'
+
+actions:
+  - utter_greet
+  - utter_ask_location
+  - action_currency
+  - utter_goodbye
+

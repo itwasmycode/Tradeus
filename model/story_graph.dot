@@ -1,0 +1,26 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=action_currency];
+3 [class="", fontsize=12, label=utter_goodbye];
+"-5" [class=ellipsis, label="..."];
+"-6" [class=ellipsis, label="..."];
+"-7" [class=ellipsis, label="..."];
+6 [class="intent dashed active", label="  ?  ", shape=rect];
+7 [class=intent, fillcolor=lightblue, label=greet, shape=rect, style=filled];
+8 [class=intent, fillcolor=lightblue, label=greeting, shape=rect, style=filled];
+9 [class=intent, fillcolor=lightblue, label="inform_currencyconversion_unit 5 currency dollar currency_to euro", shape=rect, style=filled];
+10 [class=intent, fillcolor=lightblue, label=goodbye, shape=rect, style=filled];
+0 -> 6  [class=active, key=NONE, label=""];
+0 -> 7  [class="", key=0];
+0 -> 8  [class="", key=0];
+0 -> 9  [class="", key=0];
+0 -> 10  [class="", key=0];
+1 -> "-7"  [class="", key=NONE, label=""];
+2 -> "-6"  [class="", key=NONE, label=""];
+3 -> "-5"  [class="", key=NONE, label=""];
+7 -> 1  [class="", key=0];
+8 -> 1  [class="", key=0];
+9 -> 2  [class="", key=0];
+10 -> 3  [class="", key=0];
+}

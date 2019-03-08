@@ -1,0 +1,117 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "car",
+            "entity": "product"
+          }
+        ],
+        "text": "I need to buy your car."
+      },
+      {
+        "intent": "inform_currency",
+        "entities": [
+          {
+            "start": 23,
+            "end": 24,
+            "value": "5",
+            "entity": "conversion_unit"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Dollar",
+            "entity": "currency"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "value": "Euro",
+            "entity": "currency_to"
+          }
+        ],
+        "text": "How many Dollar equals 5 Euro?"
+      },
+      {
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "book",
+            "entity": "product"
+          },
+          {
+            "start": 27,
+            "end": 37,
+            "value": "Amazon.com",
+            "entity": "e_commerce"
+          }
+        ],
+        "text": "I want to buy your book on Amazon.com "
+      },
+      {
+        "intent": "greeting",
+        "text": "Hello"
+      },
+      {
+        "intent": "greeting",
+        "text": "Hi"
+      },
+      {
+        "intent": "inform_currency",
+        "entities": [
+          {
+            "start": 8,
+            "end": 9,
+            "value": "5",
+            "entity": "conversion_unit"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Dollar",
+            "entity": "currency"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "Euro",
+            "entity": "currency_to"
+          }
+        ],
+        "text": "Convert 5 Dollar to Euro."
+      },
+      {
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 53,
+            "end": 66,
+            "value": "HurriyetEmlak",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "value": "Istanbul",
+            "entity": "location"
+          }
+        ],
+        "text": "I am interested in your house located at Istanbul on HurriyetEmlak."
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

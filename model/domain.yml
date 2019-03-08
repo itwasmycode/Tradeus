@@ -1,0 +1,41 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- action_currency
+- utter_ask_location
+- utter_goodbye
+entities:
+- conversion_unit
+- location
+- e_commerce
+- product
+- currency
+- currency_to
+intents:
+- goodbye
+- greeting
+- inform_currency
+- inform_product
+slots:
+  conversion_unit:
+    max_value: 1.0
+    min_value: 0.0
+    type: float
+  currency:
+    type: text
+  currency_to:
+    type: text
+  e_commerce:
+    type: text
+  location:
+    type: text
+  product:
+    type: text
+templates:
+  utter_ask_location:
+  - text: From where to where?
+  utter_goodbye:
+  - text: Goodbye!
+  utter_greet:
+  - text: Hello! How can I help?
