@@ -72,3 +72,14 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story 1816973743719829894
+* greeting
+    - utter_greet
+* inform_currency{"conversion_unit": "5", "currency": "dollar", "currency_to": "euro"}
+    - slot{"conversion_unit": "5"}
+    - slot{"currency": "dollar"}
+    - slot{"currency_to": "euro"}
+    - action_currency
+* goodbye
+    - utter_goodbye
+

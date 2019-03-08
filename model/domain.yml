@@ -2,19 +2,19 @@
 ---
 actions:
 - utter_greet
-- action_currency
 - utter_ask_location
 - utter_goodbye
+- action_currency
 entities:
-- conversion_unit
 - location
-- e_commerce
 - product
 - currency
+- conversion_unit
 - currency_to
+- e_commerce
 intents:
-- goodbye
 - greeting
+- goodbye
 - inform_currency
 - inform_product
 slots:
