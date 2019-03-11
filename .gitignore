@@ -11,7 +11,8 @@
 # Cache #
 ###############
 __pycache__
-/#ignored#/
+/#
+#.*
 
 
 # Packages #
