@@ -11,12 +11,23 @@ slots:
     type: float
   product:
     type: text
-    
+  product_id:
+    type: text
+  credit_card:
+    type: text
+  cvv:
+    type: text
+  expire_date:
+    type: text
+  custormer_name:
+    type: text 
+
 intents:
+  - inform_credit_card
   - inform_product
   - inform_currency
   - greeting
-    
+  - action_default_fallback
 entities:
   - location
   - e_commerce
@@ -24,12 +35,18 @@ entities:
   - currency_to
   - conversion_unit
   - product
-
+  - product_id
+  - credit_card
+  - cvv
+  - expire_date
+  - customer_name
 templates:
  utter_greet:
    - text: 'Hello! How can I help?'
  utter_ask_location:
    - text: 'From where to where?'
+ utter_checkout:
+   - text: 'Please enter your Name+Surname, Credit Card Number, CVV and Expire Date in order to buy this product.'
  utter_goodbye:
    - text: 'Goodbye!'
 
@@ -37,5 +54,8 @@ actions:
   - utter_greet
   - utter_ask_location
   - action_currency
+  - action_checkout
   - utter_goodbye
+  - utter_checkout
+  - action_post_checkout
 

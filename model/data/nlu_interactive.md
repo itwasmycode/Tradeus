@@ -4,5 +4,8 @@
 ## intent:greeting
 - Hello
 
-## intent:inform_currency
-- I want to convert [5](conversion_unit) [dollar](currency) to [Euro](currency_to:euro)
+## intent:inform_credit_card
+- Hannah Stone [3232123131412456](credit_card) [323](cvv) [10/2002](expire_date)
+
+## intent:inform_product
+- I want to buy [#323232](product_id:# 323232) id [product](product) at [el-ayn](e_commerce:el - ayn)

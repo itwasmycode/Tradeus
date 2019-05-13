@@ -1,40 +1,63 @@
 %YAML 1.1
 ---
 actions:
+- utter_goodbye
+- utter_checkout
+- action_checkout
+- action_post_checkout
+- action_currency
 - utter_greet
 - utter_ask_location
-- utter_goodbye
-- action_currency
 entities:
-- location
-- product
 - currency
-- conversion_unit
+- customer_name
 - currency_to
 - e_commerce
+- cvv
+- product_id
+- location
+- product
+- expire_date
+- credit_card
+- conversion_unit
 intents:
+- inform_product
+- inform_credit_card
 - greeting
 - goodbye
 - inform_currency
-- inform_product
+- action_default_fallback
 slots:
   conversion_unit:
     max_value: 1.0
     min_value: 0.0
     type: float
+  credit_card:
+    type: text
   currency:
     type: text
   currency_to:
     type: text
+  custormer_name:
+    type: text
+  cvv:
+    type: text
   e_commerce:
+    type: text
+  expire_date:
     type: text
   location:
     type: text
   product:
     type: text
+  product_id:
+    type: text
 templates:
   utter_ask_location:
   - text: From where to where?
+  utter_checkout:
+  - text: Please enter your Name+Surname, Credit Card Number, CVV and Expire Date
+      in order to buy this product.
   utter_goodbye:
   - text: Goodbye!
   utter_greet:

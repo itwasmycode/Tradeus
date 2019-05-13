@@ -14,7 +14,7 @@ class Path(Enum):
     DATA_JSON_FILE = os.path.join(ROOT_FILE, "data/data.json")
     TRADE_DOMAIN = os.path.join(ROOT_FILE, "trade_domain.yml")
     STORIES = os.path.join(ROOT_FILE, "data/stories.md")
-
+    DIALOGUE = os.path.join(ROOT_FILE,"models/dialogue")
 
 
 

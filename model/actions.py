@@ -1,10 +1,14 @@
 # actions.py
 
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import unicode_literals
+
 from currency_converter import CurrencyConverter
 
 from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
-from rasa_core.channels import OutputChannel
+
 
 
 class ActionCurrency(Action):
@@ -26,3 +30,23 @@ class ActionCurrency(Action):
 
         dispatcher.utter_message(f"""It is just a {converted_obj}""")
         return [SlotSet('currency', cur1), SlotSet('currency_to', cur2), SlotSet('conversion_unit', c_unit)]
+
+
+
+class CommerceReceiver(Action):    
+    def name(self):
+        return 'action_checkout'
+    
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message('Done')
+
+
+
+class ActionPostCheckout(Action):
+    def name(self):
+        return 'action_post_checkout'
+
+    def run(self, dispatcher, tracker, domain):
+        val = tracker.get_slot('product_id')
+        dispatcher.utter_message(f"Just a thing with value {val}")
+        return [SlotSet('product_id',val)]

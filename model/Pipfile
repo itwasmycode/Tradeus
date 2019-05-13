@@ -57,8 +57,7 @@ Flask-JWT-Simple = "==0.0.3"
 Keras-Applications = "==1.0.6"
 Keras-Preprocessing = "==1.0.5"
 CurrencyConverter = "*"
-3-6 = "*"
+rasa = "*"
 
 [requires]
 python_version = "3.6"
-

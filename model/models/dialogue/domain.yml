@@ -1,0 +1,93 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_ask_location
+- action_currency
+- action_checkout
+- utter_goodbye
+- utter_checkout
+- action_post_checkout
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- e_commerce
+- currency
+- currency_to
+- conversion_unit
+- product
+- product_id
+- credit_card
+- cvv
+- expire_date
+- customer_name
+forms: []
+intents:
+- inform_credit_card:
+    use_entities: true
+- inform_product:
+    use_entities: true
+- inform_currency:
+    use_entities: true
+- greeting:
+    use_entities: true
+- action_default_fallback:
+    use_entities: true
+slots:
+  conversion_unit:
+    auto_fill: true
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
+  credit_card:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  currency:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  currency_to:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  custormer_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cvv:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  e_commerce:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  expire_date:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  product:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  product_id:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_location:
+  - text: From where to where?
+  utter_checkout:
+  - text: Please enter your Name+Surname, Credit Card Number, CVV and Expire Date
+      in order to buy this product.
+  utter_goodbye:
+  - text: Goodbye!
+  utter_greet:
+  - text: Hello! How can I help?

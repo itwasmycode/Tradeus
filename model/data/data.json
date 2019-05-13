@@ -16,26 +16,7 @@
       {
         "text": "How many Dollar equals 5 Euro?",
         "intent": "inform_currency",
-        "entities": [
-          {
-            "start": 23,
-            "end": 24,
-            "value": "5",
-            "entity": "conversion_unit"
-          },
-          {
-            "start": 9,
-            "end": 15,
-            "value": "Dollar",
-            "entity": "currency"
-          },
-          {
-            "start": 25,
-            "end": 29,
-            "value": "Euro",
-            "entity": "currency_to"
-          }
-        ]
+        "entities": []
       },
       {
         "text": "I want to buy your book on Amazon.com ",
@@ -110,6 +91,453 @@
       {
         "text": "Goodbye",
         "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Buy #23959 product at Delivery.com.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "product",
+            "entity": "product"
+          },
+          {
+            "start": 22,
+            "end": 34,
+            "value": "Delivery.com",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 4,
+            "end": 10,
+            "value": "#23959",
+            "entity": "product_id"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy your watch at Letgo.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "watch",
+            "entity": "product"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "Letgo",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "Letgo",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "#32131 buy. ",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "#32131",
+            "entity": "product_id"
+          }
+        ]
+      },
+      {
+        "text": "Buy #23232.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "#23232",
+            "entity": "product_id"
+          }
+        ]
+      },
+      {
+        "text": "Can I buy your necklace at El-ayn?",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "El-ayn",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "necklace",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "Can I buy your necklace #32132 id at El-ayn?",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "necklace",
+            "entity": "product"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "El-ayn",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "#32132",
+            "entity": "product_id"
+          }
+        ]
+      },
+      {
+        "text": "Buy #32411 El ayn.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "#32411",
+            "entity": "product_id"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "El ayn",
+            "entity": "e_commerce"
+          }
+        ]
+      },
+      {
+        "text": "#23451 el ayn.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "#23451",
+            "entity": "product_id"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "el ayn",
+            "entity": "e_commerce"
+          }
+        ]
+      },
+      {
+        "text": "Bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye.",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Close",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "quit",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "I want to buy #3232321 watch at el-ayn.",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "el-ayn",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "value": "#3232321",
+            "entity": "product_id"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "watch",
+            "entity": "product"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "watch",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "Can I have your watch at el ayn",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "el ayn",
+            "entity": "e_commerce"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "watch",
+            "entity": "product"
+          }
+        ]
+      },
+      {
+        "text": "Is it possible to buy your watch #3213123 id at el ayn?",
+        "intent": "inform_product",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "watch",
+            "entity": "product"
+          },
+          {
+            "start": 33,
+            "end": 41,
+            "value": "#3213123",
+            "entity": "product_id"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "value": "el ayn",
+            "entity": "e_commerce"
+          }
+        ]
+      },
+      {
+        "text": "Andrea Weaver 5442362485977630 127 11/2020",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "5442362485977630",
+            "entity": "credit_card"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "127",
+            "entity": "cvv"
+          },
+          {
+            "start": 35,
+            "end": 42,
+            "value": "11/2020",
+            "entity": "expire_date"
+          },
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Andrea Weaver",
+            "entity": "customer_name"
+          }
+        ]
+      },
+      {
+        "text": "John Burton 5398876284206440 061 11/2021",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "John Burton",
+            "entity": "customer_name"
+          },
+          {
+            "start": 12,
+            "end": 28,
+            "value": "5398876284206440",
+            "entity": "credit_card"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "value": "061",
+            "entity": "cvv"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "11/2021",
+            "entity": "expire_date"
+          }
+        ]
+      },
+      {
+        "text": "Toni Richardson 4485860506641557 204 08/2020",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "Toni Richardson",
+            "entity": "customer_name"
+          },
+          {
+            "start": 16,
+            "end": 32,
+            "value": "4485860506641557",
+            "entity": "credit_card"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "value": "204",
+            "entity": "cvv"
+          },
+          {
+            "start": 37,
+            "end": 44,
+            "value": "08/2020",
+            "entity": "expire_date"
+          }
+        ]
+      },
+      {
+        "text": "Marti Cole 5419831004546166 283 03/2020",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Marti Cole",
+            "entity": "customer_name"
+          },
+          {
+            "start": 11,
+            "end": 27,
+            "value": "5419831004546166",
+            "entity": "credit_card"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "value": "283",
+            "entity": "cvv"
+          },
+          {
+            "start": 32,
+            "end": 39,
+            "value": "03/2020",
+            "entity": "expire_date"
+          }
+        ]
+      },
+      {
+        "text": "Robin Yazzie 5301355238684537 259 02/2021",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Robin Yazzie",
+            "entity": "customer_name"
+          },
+          {
+            "start": 13,
+            "end": 29,
+            "value": "5301355238684537",
+            "entity": "credit_card"
+          },
+          {
+            "start": 30,
+            "end": 33,
+            "value": "259",
+            "entity": "cvv"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "value": "02/2021",
+            "entity": "expire_date"
+          }
+        ]
+      },
+      {
+        "text": "James Dever 4556130049299246 372 06/2023",
+        "intent": "inform_credit_card",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "James Dever",
+            "entity": "customer_name"
+          },
+          {
+            "start": 12,
+            "end": 28,
+            "value": "4556130049299246",
+            "entity": "credit_card"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "value": "372",
+            "entity": "cvv"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "06/2023",
+            "entity": "expire_date"
+          }
+        ]
+      },
+      {
+        "text": "hi",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "bot",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "Hi.",
+        "intent": "greeting",
+        "entities": []
+      },
+      {
+        "text": "hi.",
+        "intent": "greeting",
         "entities": []
       }
     ]
